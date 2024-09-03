@@ -82,8 +82,9 @@ export function SearchForm() {
 
   const checkedLevels = getKeys<Level>(levels).filter((level:Level) => levels[level].checked);
   const checkedLevelsStrings = checkedLevels.flatMap((l) => levelsStrings[l]);
+  const checkedSites = sitesValues.filter((s) => sites[s].checked);
   const keywords = text.split(',');
-  const query = `(${Object.keys(sites).map(s => 'site:'+s).join(' OR ')}) AND (${checkedLevelsStrings.map((l) => `"${l}"`).join(' OR ')}) AND ("remote" OR "home office") AND (${keywords.map((k) => `"${k}"`).join(' OR ')})")`
+  const query = `(${checkedSites.map(s => 'site:'+s).join(' OR ')}) AND (${checkedLevelsStrings.map((l) => `"${l}"`).join(' OR ')}) AND ("remote" OR "home office") AND (${keywords.map((k) => `"${k}"`).join(' OR ')})")`
 
   return (
     <form onSubmit={onSubmit} className="flex flex-col justify-center text-center gap-6">
