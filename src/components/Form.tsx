@@ -29,6 +29,9 @@ const checkboxDefaultData = sitesValues.reduce<Record<string, CheckBoxData>>(
 );
 
 const levelsStrings = {
+  intern: [
+    'estagiário', 'estágio', 'intern', 'internship',
+  ],
   junior: [
     'jr', 'junior', 'entry', 'assistant'
   ],
@@ -38,18 +41,19 @@ const levelsStrings = {
   senior: [
     'senior', 'sr', 'III'
   ],
-  upper: [
-    'lead', 'manager', 'ld', 'staff'
+  lead: [
+    'tech lead', 'lead'
   ]
 }
 
-type Level = 'junior' | 'mid' | 'senior' | 'upper'
+type Level = 'intern' | 'junior' | 'mid' | 'senior' | 'lead';
 
 const levelsDefaultCheckboxes: Record<Level, CheckBoxData> = {
+  intern: { checked: false, label: 'Estágio'},
   junior: { checked: true, label: 'Junior' },
   mid: { checked: false, label: 'Pleno' },
   senior: { checked: false, label: 'Senior' },
-  upper: { checked: false, label: 'Senior+' },
+  lead: { checked: false, label: 'Tech Lead' },
 }
 
 export function SearchForm() {
