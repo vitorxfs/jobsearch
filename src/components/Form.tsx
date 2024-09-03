@@ -92,7 +92,7 @@ export function SearchForm() {
         <p className="text-neutral-400">Separadas por vírgula</p>
       </div>
       <input type="text" placeholder="Exemplo: Spring Boot, React, SQL" value={text} onChange={handleChangeText} className="border border-green-800 px-4 py-2 bg-black text-white rounded-full text-center" />
-      <a href={`https://google.com/search?q=${query.replace(' ', '+')}&as_qdr=w`} target='_blank' ref={searchLink} className="bg-green-400 px-4 py-2 rounded-full text-black font-bold">Buscar já</a>
+      <a href={`https://google.com/search?q=${query.replace(' ', '+')}&as_qdr=w`} target='_blank' ref={searchLink} className="bg-green-400 px-4 py-2 rounded-full text-black font-bold">Buscar</a>
     </form>
   )
 }
