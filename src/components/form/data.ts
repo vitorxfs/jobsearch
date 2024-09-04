@@ -10,6 +10,7 @@ export const jobSites = [
   'linkedin.com',
   'myworkdaysjobs.com',
   'picpay.com',
+  'remotar.com.br',
   'vagas.com.br',
 ];
 
