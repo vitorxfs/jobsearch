@@ -9,7 +9,9 @@ export const jobSites = [
   'jobs.quickin.io',
   'indeed.com',
   'catho.com',
-  'linkedin.com'
+  'linkedin.com',
+  'picpay.com',
+  'gupy.io'
 ];
 
 export type Level = 'intern' | 'junior' | 'mid' | 'senior' | 'lead';
