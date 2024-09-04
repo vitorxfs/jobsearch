@@ -1,4 +1,4 @@
-import { SearchForm } from '@/components/Form';
+import { SearchForm } from '@/components/form/Form';
 import Link from 'next/link';
 import React from 'react';
 
