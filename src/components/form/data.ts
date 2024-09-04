@@ -8,10 +8,10 @@ export const jobSites = [
   'ats.comparably.com',
   'jobs.quickin.io',
   'indeed.com',
-  'catho.com',
   'linkedin.com',
   'picpay.com',
-  'gupy.io'
+  'gupy.io',
+  'vagas.com.br',
 ];
 
 export type Level = 'intern' | 'junior' | 'mid' | 'senior' | 'lead';
