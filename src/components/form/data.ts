@@ -1,16 +1,15 @@
 export const jobSites = [
-  'jobs.lever.co',
   'boards.greenhouse.io',
+  'careers.jobscore.com',
+  'gupy.io',
+  'indeed.com',
   'jobs.ashbyhq.com',
   'jobs.jobvite.com',
-  'myworkdaysjobs.com',
-  'careers.jobscore.com',
-  'ats.comparably.com',
+  'jobs.lever.co',
   'jobs.quickin.io',
-  'indeed.com',
   'linkedin.com',
+  'myworkdaysjobs.com',
   'picpay.com',
-  'gupy.io',
   'vagas.com.br',
 ];
 
