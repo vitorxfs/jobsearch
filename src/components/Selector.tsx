@@ -1,16 +1,18 @@
 "use client"
 
+import { getKeys } from '@/helpers/object';
 import React, { useState } from 'react';
 
 export interface CheckBoxData { checked: boolean; label?: string }
 
 interface MultiSelectorProps {
-  values: string[],
   checkboxes: Record<string, CheckBoxData>;
   changeCheckbox: (value: string) => void;
 }
 
-export function MultiSelector({values, checkboxes, changeCheckbox}: MultiSelectorProps) {
+export function MultiSelector({checkboxes, changeCheckbox}: MultiSelectorProps) {
+  const values = getKeys(checkboxes);
+
   const handleLabelKeyDown = (e: React.KeyboardEvent, value: string) => {
     if(e.code && e.code === 'Enter') {
       changeCheckbox(value)

@@ -15,6 +15,7 @@ export function buildSearchQuery(opts: {
   return [
     `(${sitesQuery})`,
     `(${levelsQuery})`,
+    `(${localQuery})`,
     `${keywordsQuery}`,
   ].join(' AND ');
 }
