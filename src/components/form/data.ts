@@ -4,7 +4,19 @@ export const jobSites = [
   'talent.bairesdev.com',
   'onstrider.com',
   'weworkremotely',
-  'remoteok.com',
+  'boards.greenhouse.io',
+  'careers.jobscore.com',
+  'gupy.io',
+  'indeed.com',
+  'jobs.ashbyhq.com',
+  'jobs.jobvite.com',
+  'jobs.lever.co',
+  'jobs.quickin.io',
+  'linkedin.com',
+  'myworkdaysjobs.com',
+  'picpay.com',
+  'remotar.com.br',
+  'vagas.com.br',
 ];
 
 export type Level = 'intern' | 'junior' | 'mid' | 'senior' | 'lead';
